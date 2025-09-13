@@ -73,12 +73,3 @@ It combines **financial models, natural language query parsing, and scenario sim
 - **yfinance, Alpha Vantage, Coinbase** (market data)
 
 ---
-
-## 📌 TODO / Future Work
-
-- [ ] Support **American options** in Binomial Tree.
-- [ ] Add **Greeks via Monte Carlo**.
-- [ ] Multi-option **portfolio strategies** (e.g., spreads, straddles).
-- [ ] Deploy on **Streamlit Cloud** / **Vercel**.
-
----
