@@ -48,4 +48,66 @@ It combines **financial models, natural language query parsing, and scenario sim
 ---
 
 ## 📂 Project Structure
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── .env # API keys (not committed)
 
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/options-pricing-chatbot.git
+   cd options-pricing-chatbot
+
+
+Set up environment
+
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate     # Windows
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Set environment variables in .env:
+
+ALPHA_VANTAGE_API_KEY=your_api_key_here
+GEMINI_API_KEY=your_gemini_key_here   # optional (for crypto)
+
+▶️ Usage
+
+Run the app with:
+
+streamlit run app.py
+
+
+Then open the URL (default: http://localhost:8501) in your browser.
+
+💡 Example Queries
+
+Price a European call option on AAPL with strike 150, maturity 1 year, volatility 20%, risk-free 5%.
+
+Use Monte Carlo to price a put option on BTC at strike 25,000, expiring in 3 months.
+
+Show binomial tree pricing for TSLA call with strike 280, 6 months maturity.
+
+Price a call on NFLX, but increase volatility by 10% and decay time by 2 months.
+
+🛠️ Tech Stack
+
+Python
+
+Streamlit (UI framework)
+
+NumPy, Pandas (computations)
+
+Matplotlib (visualizations)
+
+yfinance, Alpha Vantage, Coinbase (market data)
