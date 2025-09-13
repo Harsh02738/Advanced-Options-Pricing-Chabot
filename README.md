@@ -54,55 +54,6 @@ It combines **financial models, natural language query parsing, and scenario sim
 ├── README.md # Project documentation
 └── .env # API keys (not committed)
 
-yaml
-Copy code
-
----
-
-## ⚙️ Installation
-
-1. **Clone the repo**
-git clone https://github.com/your-username/options-pricing-chatbot.git
-cd options-pricing-chatbot
-
-markdown
-Copy code
-
-2. **Set up environment**
-python -m venv venv
-source venv/bin/activate # Mac/Linux
-venv\Scripts\activate # Windows
-
-markdown
-Copy code
-
-3. **Install dependencies**
-pip install -r requirements.txt
-
-markdown
-Copy code
-
-4. **Set environment variables** in `.env`:
-ALPHA_VANTAGE_API_KEY=your_api_key_here
-GEMINI_API_KEY=your_gemini_key_here # optional (for crypto)
-
-yaml
-Copy code
-
----
-
-## ▶️ Usage
-
-Run the app with:
-
-streamlit run app.py
-
-yaml
-Copy code
-
-Then open the URL (default: [http://localhost:8501](http://localhost:8501)) in your browser.
-
----
 
 ## 💡 Example Queries
 
